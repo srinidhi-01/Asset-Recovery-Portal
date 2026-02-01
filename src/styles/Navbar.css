@@ -1,0 +1,92 @@
+:root {
+  --bg: #1f2937;
+  --text: #ffffff;
+  --btn: #2563eb;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --text: #111827;
+  --btn: #1d4ed8;
+}
+
+body.dark {
+  --bg: #1f2937;
+  --text: #ffffff;
+  --btn: #2563eb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link {
+  background: var(--btn);
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+.nav-user {
+  background-color: rgb(251, 253, 255);
+  color: #090c0c;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: var(--bg);
+  border: 1px solid #374151;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+}
